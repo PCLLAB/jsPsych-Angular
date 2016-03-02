@@ -506,7 +506,7 @@ var jsPsych = (function() {
       if (keyboardNotAllowed) {
         go();
       } else {
-        DOM_target.append('<div style=""><p>The experiment will launch in fullscreen mode when you click the button below.</p><button id="jspsych-fullscreen-btn" class="jspsych-btn">Launch Experiment</button></div>');
+        DOM_target.append('<div><p>The experiment will launch in fullscreen mode when you click the button below.</p><button id="jspsych-fullscreen-btn" class="md-button md-raised md-primary">Launch Experiment</button></div>');
         $('#jspsych-fullscreen-btn').on('click', function() {
           var element = document.documentElement;
           if (element.requestFullscreen) {
@@ -578,13 +578,13 @@ var jsPsych = (function() {
   }
 
   function drawProgressBar() {
-    $('body').prepend($('<div id="jspsych-progressbar-container"><span>Completion Progress</span><div id="jspsych-progressbar-outer"><div id="jspsych-progressbar-inner"></div></div></div>'));
+    $('body').prepend($('<div id="jspsych-progressbar-container"><span>Completion Progress</span><md-progress-linear md-mode="determinate" value="0"></md-progress-linear></div>'));
   }
 
   function updateProgressBar() {
     var progress = jsPsych.progress();
 
-    $('#jspsych-progressbar-inner').css('width', progress.percent_complete + "%");
+    $('#jspsych-progressbar-inner').attr('value', progress.percent_complete);
   }
 
   return core;
