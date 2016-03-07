@@ -1,0 +1,82 @@
+
+.experiment-container {
+  width: 100%;
+  max-width: 800px;
+  min-height: 300px;
+  max-height: 600px;
+  height: 100%;
+  padding: 10%;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  overflow-y: auto;
+  background: #f0f0f0;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+html {
+  background: #bbb;
+}
+
+.jspsych-display-element {
+  width: 800px;
+  margin: 20px auto 20px auto;
+}
+
+#jspsych-progressbar-inner {
+  background: #777;
+  height: 10px;
+}
+
+#jspsych-progressbar-container {
+  padding-top: 1.5em;
+  background: 0;
+  border: 0;
+}
+
+#jspsych-progressbar-container span {
+  display: none;
+}
+
+.pcllab-button {
+  font-family: "Open Sans", Sans-serif;
+  padding: 0.5em 2em;
+  border: 3px solid #f0f0f0;
+  background: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.15em;
+   -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+           transition: all ease 0.3s;
+}
+
+.pcllab-button:hover{
+  background: #fff;
+  border: 3px solid #fff;
+  color: #338FD8;
+}
+/* School specific CSS */
+html {
+    background: #0073CF;
+    color: white;
+}
+
+.experiment-container {
+  box-shadow: none;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 10px;
+}
+
+#jspsych-progressbar-inner {
+  background: #0093DF;
+}
+
+.pcllab-button {
+  color: white;
+}
+
+.pcllab-button:hover{
+  color: #338FD8;
+}
