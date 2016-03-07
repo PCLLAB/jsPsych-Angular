@@ -36,11 +36,11 @@ var jsPsych = (function() {
     global_trial_index = 0;
     current_trial = {};
 
-    // check if there is a body element on the page
-    var default_display_element = $('body');
+    // check if there is a #experiment-container on the page
+    var default_display_element = $('#experiment-container');
     if (default_display_element.length === 0) {
-      $(document.documentElement).append($('<body>'));
-      default_display_element = $('body');
+      $(document.documentElement).append($('<div class="experiment-container">'));
+      default_display_element = $('#experiment-container');
     }
 
     var defaults = {
@@ -578,7 +578,7 @@ var jsPsych = (function() {
   }
 
   function drawProgressBar() {
-    $('body').prepend($('<div id="jspsych-progressbar-container"><span>Completion Progress</span><md-progress-linear md-mode="determinate" value="0"></md-progress-linear></div>'));
+    $('#jspsych-container').prepend($('<div id="jspsych-progressbar-container"><span>Completion Progress</span><md-progress-linear md-mode="determinate" value="0"></md-progress-linear></div>'));
   }
 
   function updateProgressBar() {
