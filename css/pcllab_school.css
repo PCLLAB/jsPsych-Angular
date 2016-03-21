@@ -14,10 +14,6 @@
   border: 1px solid rgba(0,0,0,0.3);
 }
 
-html {
-  background: #bbb;
-}
-
 .jspsych-display-element {
   width: 800px;
   margin: 20px auto 20px auto;
@@ -57,7 +53,7 @@ html {
   color: #338FD8;
 }
 /* School specific CSS */
-html {
+#jspsych_experiment {
     background: #0073CF;
     color: white;
 }
