@@ -37,7 +37,7 @@ var jsPsych = (function() {
     current_trial = {};
 
     // check if there is a #experiment-container on the page
-    var default_display_element = $('#experiment-container');
+    var default_display_element = $('.experiment-container');
     if (default_display_element.length === 0) {
       $(document.documentElement).append($('<div class="experiment-container">'));
       default_display_element = $('#experiment-container');

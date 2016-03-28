@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<title>My experiment</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	
+	<link href="css/jspsych.css" rel="stylesheet" type="text/css"></link>
+	<link href="css/pcllab.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+	<div class="experiment-container">
+	</div>
+</body>
+<script src="jspsych.js"></script>
+<script src="plugins/text/plugin.js"></script>
+<script src="plugins/multi-trial-learn/plugin.js"></script>
+<script>
+
+	var test_multi_trial = {
+		type: 'multi-trial-learn',
+		word_list: ["apple","bear","candy","deli","ear"],
+		user_timing: false,
+		delay: 1000, //MS delay
+		max_attempts: 0, //unlimited attempts
+		recall_instruct: "Recall these words.",
+		study_instruct: "Study these words",
+		max_recall_time: -1 // for no limit, otherwise MS delay
+	}
+
+	jsPsych.init({
+		timeline: [ test_multi_trial ]
+		
+	})
+
+</script>
+</html>
