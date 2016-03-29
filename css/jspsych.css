@@ -9,16 +9,14 @@
 /* fonts and type */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-html {
+#jspsych_experiment {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 1.6em;
-}
-body {
   margin: 0;
   padding: 0;
 }
-p {
+#jspsych_experiment p {
   clear: both;
 }
 .very-small {
@@ -52,7 +50,7 @@ p {
 }
 /* Form elements like input fields and buttons */
 
-input[type="text"] {
+#jspsych_experiment input[type="text"] {
   font-family: 'Open Sans', 'Arial', sans-sefif;
   font-size: 14px;
 }
