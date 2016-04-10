@@ -9,6 +9,7 @@
  **/
 
 /**
+ * @name Button Response
  * @param {array} stimuli - The stimulus to display. Either HTML-formatted, or the path to an image.
  * @param {boolean=} [is_html=false] - If stimulus is an HTML-formatted string, this parameter needs to be set to true.
  * @param {array=} [choices=[]] - This array contains the labels for the buttons.

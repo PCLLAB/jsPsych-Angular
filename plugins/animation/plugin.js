@@ -6,6 +6,7 @@
  */
 
 /**
+ * @name Animation
  * @param {array} stimuli - Each element of the array is a path to an image file.
  * @param {number=} [frame_time=250] - How long to display each image (in milliseconds).
  * @param {number=} [frame_isi=0] - If greater than 0, then a gap will be shown between each image in the sequence. This parameter specifies the length of the gap.
