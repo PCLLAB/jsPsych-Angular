@@ -5,6 +5,14 @@
  * documentation: docs.jspsych.org
  */
 
+/**
+ * @param {array} stimuli - Each element of the array is a path to an image file.
+ * @param {number=} [frame_time=250] - How long to display each image (in milliseconds).
+ * @param {number=} [frame_isi=0] - If greater than 0, then a gap will be shown between each image in the sequence. This parameter specifies the length of the gap.
+ * @param {number=} [sequence_reps=1] - How many times to show the entire sequence. There will be no gap (other than the gap specified by frame_isi) between repetitions.
+ * @param {array=} [choices=[]] - This array contains the keys that the subject is allowed to press in order to respond to the stimulus. Keys can be specified as their numeric key code or as characters (e.g. 'a', 'q'). The default value of an empty array means that all keys will be accepted as valid responses.
+ * @param {string=} [prompt=""] - This string can contain HTML markup. Any content here will be displayed below the stimulus. The intention is that it can be used to provide a reminder about the action the subject is supposed to take (e.g. which key to press).
+ */
 jsPsych.plugins.animation = (function() {
 
   var plugin = {};
