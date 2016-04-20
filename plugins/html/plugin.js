@@ -6,6 +6,14 @@ the plugin will wait of a specified time before it proceeds.
 documentation: docs.jspsych.org
 */
 
+/**
+ * @name HTML
+ * @param {string} url - The URL of the page to display.
+ * @param {number=} [cont_key=null] - The key code a key to advance to the next trial. If left as null, then the subject will not be able to advance trials using the keyboard.
+ * @param {string=} [cont_btn=null] - The ID of a clickable element on the page. When the element is clicked, the trial will advance.
+ * @param {function=} [check_fn="function(){ return true; }"] -	This function is called with the jsPsych display_element as the only argument when the subject attempts to advance the trial. The trial will only advance if the function return true. This can be used to verify that the subject has correctly filled out a form before continuing, for example.
+ * @param {boolean=} [force_refresh=false] - If true, then the plugin will avoid using the cached version of the HTML page to load if one exists.
+ */
 jsPsych.plugins.html = (function() {
 
   var plugin = {};
