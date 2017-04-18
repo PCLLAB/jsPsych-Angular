@@ -1,0 +1,260 @@
+#jspsych_container {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 0 5px 0 0;
+  padding: 0;
+  /* Classes for changing location of things */
+  /* Form elements like input fields and buttons */
+  /* borrowing Bootstrap style for btn elements, but combining styles a bit */
+  /* Container holding jsPsych content */
+  /* jsPsych progress bar */
+  /* PLUGIN: jspsych-animation */
+  /* PLUGIN: jspsych-categorize-animation */
+  /* PLUGIN: jspsych-categorize */
+  /* PLUGIN: jspsych-free-sort */
+  /* PLUGIN: jspsych-instructions */
+  /* PLUGIN: jspsych-multi-stim-multi-response */
+  /* PLUGIN: jspsych-palmer */
+  /* PLUGIN: jspsych-same-different */
+  /* PLUGIN: jspsych-single-stim */
+  /* PLUGIN: jspsych-survey-text */
+  /* PLUGIN: jspsych-survey-likert */
+  /*
+   *
+   * PLUGIN: jspsych-survey-multi-choice
+   *
+   */
+  /** PLUGIN: jspsych-visual-search-circle **/
+  /* PLUGIN: jspsych-vsl-animate-occlusion */
+  /* PLUGIN: jspsych-xab */
+}
+#jspsych_container p {
+  clear: both;
+}
+#jspsych_container .very-small {
+  font-size: 50%;
+}
+#jspsych_container .small {
+  font-size: 75%;
+}
+#jspsych_container .large {
+  font-size: 125%;
+}
+#jspsych_container .very-large {
+  font-size: 150%;
+}
+#jspsych_container .left {
+  float: left;
+}
+#jspsych_container .right {
+  float: right;
+}
+#jspsych_container .center-content {
+  text-align: center;
+}
+#jspsych_container .block-center {
+  margin: 1em auto;
+  display: block;
+}
+#jspsych_container input[type="text"] {
+  font-family: 'Open Sans', 'Arial', sans-sefif;
+  font-size: 14px;
+}
+#jspsych_container .jspsych-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  cursor: pointer;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+#jspsych_container .jspsych-btn:hover {
+  background-color: #ddd;
+  border-color: #aaa;
+}
+#jspsych_container .jspsych-display-element {
+  width: 800px;
+  margin: 50px auto 50px auto;
+}
+#jspsych_container #jspsych-progressbar-container {
+  color: #777;
+  border-bottom: 2px solid #dedede;
+  background-color: #f3f3f3;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 10px 0px;
+}
+#jspsych_container #jspsych-progressbar-outer {
+  background-color: #dedede;
+  border-radius: 5px;
+  padding: 1px;
+  width: 800px;
+  margin: auto;
+}
+#jspsych_container #jspsych-progressbar-inner {
+  background-color: #aaa;
+  /* #3EB3D7; */
+  width: 0%;
+  height: 1em;
+  border-radius: 5px;
+}
+#jspsych_container #jspsych-animation-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container #jspsych-categorize-animation-stimulus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container #jspsych-categorize-stimulus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container .feedback {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container #jspsych-free-sort-arena {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #444;
+}
+#jspsych_container .jspsych-free-sort-draggable {
+  cursor: move;
+}
+#jspsych_container #jspsych-free-sort-done-btn {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+}
+#jspsych_container .jspsych-instructions-nav {
+  text-align: center;
+  margin-top: 2em;
+}
+#jspsych_container .jspsych-instructions-nav button {
+  margin: 20px;
+}
+#jspsych_container #jspsych-multi-stim-multi-response-stimulus {
+  display: block;
+  margin: auto;
+}
+#jspsych_container #jspsych-palmer-snapCanvas {
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container .jspsych-same-different-stimulus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container #jspsych-single-stim-stimulus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container .jspsych-survey-text {
+  margin: 0.25em 0em;
+}
+#jspsych_container .jspsych-survey-text-question {
+  margin: 2em 0em;
+}
+#jspsych_container .jspsych-survey-likert-statement {
+  display: block;
+  font-size: 18px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+#jspsych_container .jspsych-survey-likert-opts {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 35px;
+  display: block;
+  font-size: 14px;
+  line-height: 1.1em;
+}
+#jspsych_container .jspsych-survey-likert-opt-label {
+  line-height: 1.1em;
+}
+#jspsych_container .jspsych-survey-likert-opts:before {
+  content: '';
+  position: relative;
+  top: 11px;
+  /*left:9.5%;*/
+  display: block;
+  background-color: #efefef;
+  height: 4px;
+  width: 100%;
+}
+#jspsych_container .jspsych-survey-likert-opts:last-of-type {
+  border-bottom: 0;
+}
+#jspsych_container .jspsych-survey-likert-opts li {
+  display: inline-block;
+  /*width:19%;*/
+  text-align: center;
+  vertical-align: top;
+}
+#jspsych_container .jspsych-survey-likert-opts li input[type=radio] {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -6px;
+}
+#jspsych_container .jspsych-survey-multi-choice-question {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#jspsych_container .jspsych-survey-multi-choice-text span.required {
+  color: darkred;
+}
+#jspsych_container .jspsych-survey-multi-choice-horizontal .jspsych-survey-multi-choice-text {
+  text-align: center;
+}
+#jspsych_container .jspsych-survey-multi-choice-option {
+  line-height: 2;
+}
+#jspsych_container .jspsych-survey-multi-choice-horizontal .jspsych-survey-multi-choice-option {
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+  vertical-align: top;
+}
+#jspsych_container label.jspsych-survey-multi-choice-text input[type="radio"] {
+  margin-right: 1em;
+}
+#jspsych_container #jspsych-survey-multi-choice-next {
+  display: block;
+  margin: auto;
+}
+#jspsych_container #jspsych-visual-search-circle-svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#jspsych_container #jspsych-vsl-animate-occlusion-canvas {
+  display: block;
+  margin: auto;
+}
+#jspsych_container .jspsych-xab-stimulus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
