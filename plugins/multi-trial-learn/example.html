@@ -32,8 +32,10 @@
 	}
 
 	jsPsych.init({
-		timeline: [ test_multi_trial ]
-
+		timeline: [ test_multi_trial ],
+		on_finish: function() {
+			jsPsych.data.displayData();
+		}
 	})
 
 </script>

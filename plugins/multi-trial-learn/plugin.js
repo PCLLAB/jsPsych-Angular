@@ -33,6 +33,12 @@ jsPsych.plugins["multi-trial-learn"] = (function() {
         // but in general it should be included
         trial = jsPsych.pluginAPI.evaluateFunctionParameters(trial);
 
+        $("<link/>", {
+           rel: "stylesheet",
+           type: "text/css",
+           href: "plugins/multi-trial-learn/multi-trial-learn-styles.css"
+        }).appendTo("head");
+
         function scrambleWords(){
             for (var i = temp_word_list.length - 1; i > 0; i--) {
                 var j = Math.floor(Math.random() * (i + 1));
@@ -63,7 +69,7 @@ jsPsych.plugins["multi-trial-learn"] = (function() {
                     $('.multi-trial-learn-continue').click(function() {
                         startTime = Date.now();
                         nextWord();
-                    });                 
+                    });
                 }
             }
 
@@ -106,7 +112,7 @@ jsPsych.plugins["multi-trial-learn"] = (function() {
                                     }
                                 },trial.delay);
                             }
-                        });     
+                        });
                 },800);
 
             }
@@ -140,7 +146,7 @@ jsPsych.plugins["multi-trial-learn"] = (function() {
                         console.log("Finished trial");
                         jsPsych.finishTrial({
                             finish: "finished multi-trial-learn"
-                        });                     
+                        });
                     } else {
                         attempt++;
                         study();
@@ -194,7 +200,7 @@ jsPsych.plugins["multi-trial-learn"] = (function() {
                                 $(".multi-trial-learn-error").remove();
                             }, 1500);
                         }
-                        
+
                         firstKeyWaiting = true;
                         $(".multi-trial-learn-input").focus();
                     }
@@ -305,7 +311,7 @@ jsPsych.plugins["multi-trial-learn"] = (function() {
                     $(".multi-trial-learn-continue").click(function() {
                         nextRecall2();
                     })
-                });             
+                });
             }
             study();
 
